@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101411">
+  <meta name="description" content="Gaia Eco Agent turns environmental signals into understanding, predictions and practical action.">
+  <title>Gaia Eco Agent — When the planet calls, AI takes action</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark" data-accent="forest">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Gaia Eco Agent home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14"/><path d="M8 20.5c4.5-9 13.2-12.1 19.6-10.7-1 8.7-6.5 15.3-13.1 15.3-2.7 0-5-1.8-6.5-4.6Z"/><path d="M10 25c3.4-4.6 7.9-8.5 14.2-11.1"/></svg>
+        </span>
+        <span class="brand-name">GAIA<span> / ECO AGENT</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#intelligence">Intelligence</a>
+        <a href="#live-data">Live data</a>
+        <a href="#shop">Shop</a>
+        <a href="#gaia-ai">Gaia AI</a>
+        <a href="#impact">Impact</a>
+        <a href="#display-settings">Settings</a>
+        <a href="#take-action">Contact</a>
+        <a class="nav-cta" href="#take-action">Take action <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <button class="cart-trigger" type="button" id="cart-open" aria-haspopup="dialog" aria-controls="cart-dialog" aria-expanded="false" aria-label="Open shopping cart, 0 items">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.3a2 2 0 0 0 2 1.7h8.7a2 2 0 0 0 1.9-1.4L21 9H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        <span class="cart-trigger-label">Bag</span><span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+      </button>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme">
+        <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.7 8.7 0 0 1 8.9 3.8a8.8 8.8 0 1 0 11.3 11.3Z"/></svg>
+        <span class="theme-label">Light</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ENVIRONMENTAL INTELLIGENCE, MADE HUMAN</p>
+        <h1 id="hero-title">When the planet calls,<br><em>AI takes action.</em></h1>
+        <p class="hero-lede">The planet is speaking. Gaia listens to environmental signals, helps us see what they mean, and turns insight into a next step.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#intelligence">Explore the Eco Agent <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#gaia-ai">Meet Gaia AI <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-rule"></span><span>Human judgment leads. AI helps us see sooner.</span></div>
+      </div>
+
+      <div class="hero-visual" aria-label="Illustrative view of Earth with an environmental signal being analyzed">
+        <div class="visual-topline"><span>GAIA FIELD INTERFACE</span><span class="live-indicator"><i></i> DEMO SCENARIO</span></div>
+        <div class="earth-scene">
+          <svg class="earth-art" viewBox="0 0 560 520" role="img" aria-labelledby="earth-title earth-desc">
+            <title id="earth-title">Earth and a forest edge in a simulated environmental scenario</title>
+            <desc id="earth-desc">A glowing Earth horizon sits above a dark forest. Fine orbital lines connect a highlighted forest signal to an AI analysis point.</desc>
+            <defs>
+              <radialGradient id="spaceGlow" cx="49%" cy="49%" r="55%"><stop offset="0" stop-color="#16392c" stop-opacity=".36"/><stop offset=".62" stop-color="#101a18" stop-opacity=".12"/><stop offset="1" stop-color="#101411" stop-opacity="0"/></radialGradient>
+              <radialGradient id="ocean" cx="35%" cy="24%" r="80%"><stop offset="0" stop-color="#2b6655"/><stop offset=".42" stop-color="#194438"/><stop offset=".82" stop-color="#142b26"/><stop offset="1" stop-color="#0d1b19"/></radialGradient>
+              <linearGradient id="earthRim" x1="95" y1="190" x2="414" y2="330"><stop stop-color="#a8d9ad"/><stop offset=".4" stop-color="#67c79e"/><stop offset="1" stop-color="#52a6b7" stop-opacity=".42"/></linearGradient>
+              <linearGradient id="land" x1="150" y1="120" x2="370" y2="335"><stop stop-color="#9cae73"/><stop offset=".48" stop-color="#6f9366"/><stop offset="1" stop-color="#294a39"/></linearGradient>
+              <linearGradient id="ridge" x1="0" y1="390" x2="0" y2="500"><stop stop-color="#284435"/><stop offset="1" stop-color="#0c1511"/></linearGradient>
+              <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <clipPath id="planetClip"><circle cx="277" cy="232" r="151"/></clipPath>
+            </defs>
+            <circle cx="280" cy="260" r="255" fill="url(#spaceGlow)"/>
+            <g class="orbit-lines" fill="none" stroke="#a9d6c0" stroke-opacity=".2">
+              <ellipse cx="280" cy="242" rx="220" ry="91" transform="rotate(-22 280 242)"/>
+              <ellipse cx="280" cy="242" rx="247" ry="117" transform="rotate(23 280 242)" stroke-opacity=".12"/>
+              <path d="M34 343c113-101 325-147 493-73" stroke-dasharray="2 7"/>
+            </g>
+            <circle cx="277" cy="232" r="160" fill="#65c7a2" opacity=".06" filter="url(#softGlow)"/>
+            <circle cx="277" cy="232" r="151" fill="url(#ocean)" stroke="url(#earthRim)" stroke-width="1.4"/>
+            <g clip-path="url(#planetClip)">
+              <path d="m148 166 22-20 29 5 14 11 19 1 5 14-19 13-4 19-15 7-9 28-17 4-8-25-14-9-7-19-12-4 4-18 12-7Zm65 92 20 3 13 16-4 20 17 15 7 30-13 13-12-19-8-26-15-14-9-19 4-19Zm65-143 18-16 27 1 10 15-9 15-20-1-9 13-17-6-5-21Zm30 65 23-20 27 7 10 20-9 22-17 9-2 29-14 25-16-13 5-23-14-12 5-19-15-7 17-18Zm-24 93 14-14 19 7 12 17-8 14-17-4-13 12-10-13 3-19Zm85-120 18-8 17 13-4 20-17 8-13-14Z" fill="url(#land)" opacity=".87"/>
+              <path d="M132 215c58-39 113-43 167-31 52 11 84 1 125-24" fill="none" stroke="#d2e4b5" stroke-opacity=".2" stroke-width=".8"/>
+              <path d="M145 267c70-30 132-29 190-7 42 16 68 14 99-5" fill="none" stroke="#a8cfad" stroke-opacity=".2" stroke-width=".8"/>
+              <path d="M185 99c-31 42-46 89-44 142 2 44 18 82 45 112" fill="none" stroke="#9dcebe" stroke-opacity=".18"/>
+              <path d="M316 82c31 40 47 92 43 149-3 44-19 85-45 114" fill="none" stroke="#9dcebe" stroke-opacity=".18"/>
+              <path d="M126 282c69 8 121 0 170-18 49-18 99-20 141-8" fill="none" stroke="#70d9ae" stroke-opacity=".55" stroke-width="1.2" stroke-dasharray="3 6"/>
+            </g>
+            <path d="M76 393c54-45 112-53 172-37 53 14 103 8 151-17 39-20 74-21 119 2v179H76V393Z" fill="url(#ridge)"/>
+            <path d="M77 408c63-31 119-25 171-12 49 13 98 8 151-17 46-22 81-21 119-7" fill="none" stroke="#6f9b75" stroke-opacity=".72" stroke-width="1.3"/>
+            <path d="M0 442c57-33 108-30 161-8 44 19 95 25 145 9 49-16 100-25 153-7 41 14 72 9 101-3v87H0v-78Z" fill="#101a14"/>
+            <g fill="#0b120e" opacity=".95">
+              <path d="m75 450 14-49 14 49h-8v20h-12v-20h-8Zm41 10 10-37 11 37h-6v17h-10v-17h-5Zm300-7 14-50 14 50h-8v20h-12v-20h-8Zm36 10 9-35 11 35h-6v17h-9v-17h-5Z"/>
+            </g>
+            <g class="signal-beacon" transform="translate(144 337)">
+              <circle r="16" fill="#c8d99b" opacity=".1"/><circle r="8" fill="#c8d99b" opacity=".18"/><circle r="3.2" fill="#dbe7bb"/>
+              <circle r="17" fill="none" stroke="#c5d69a" stroke-opacity=".6" stroke-dasharray="2 5"/>
+            </g>
+            <path d="M145 338 99 373h-41" fill="none" stroke="#c6d99c" stroke-opacity=".66" stroke-width=".8" stroke-dasharray="3 4"/>
+            <circle cx="375" cy="150" r="3" fill="#9bdac5"/><circle cx="375" cy="150" r="9" fill="none" stroke="#9bdac5" stroke-opacity=".4"/>
+            <path d="M375 150 429 125h42" fill="none" stroke="#9bdac5" stroke-opacity=".5" stroke-width=".8" stroke-dasharray="2 4"/>
+          </svg>
+          <div class="visual-tag tag-signal"><span class="tag-dot"></span><span>FOREST EDGE<br><b>signal detected</b></span></div>
+          <div class="visual-tag tag-analysis"><span class="analysis-ring" aria-hidden="true"><i></i></span><span>GAIA ANALYSIS<br><b>pattern in review</b></span></div>
+          <div class="visual-caption"><span class="caption-index">01 / 03</span><span>A living planet. A signal worth understanding.</span></div>
+        </div>
+        <p class="visual-disclaimer"><span aria-hidden="true">✳</span> SIMULATED SCENARIO · VISUAL ONLY, NOT A LIVE ALERT</p>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO FOLLOW THE SIGNAL</a>
+    </section>
+
+    <div class="story-rail" aria-label="Eco Agent process">
+      <div class="story-rail-inner">
+        <span class="rail-label">THE ECO AGENT</span>
+        <span class="rail-step active"><i>01</i> PLANET</span><span class="rail-arrow" aria-hidden="true">→</span>
+        <span class="rail-step"><i>02</i> DATA</span><span class="rail-arrow" aria-hidden="true">→</span>
+        <span class="rail-step"><i>03</i> AI INSIGHT</span><span class="rail-arrow" aria-hidden="true">→</span>
+        <span class="rail-step"><i>04</i> ACTION</span><span class="rail-arrow" aria-hidden="true">→</span>
+        <span class="rail-step"><i>05</i> IMPACT</span>
+      </div>
+    </div>
+
+    <section class="intro-section section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-kicker"><span>01</span><span>WHY GAIA EXISTS</span></div>
+      <div class="intro-grid">
+        <h2 id="about-title">Better signals.<br><em>Better decisions.</em></h2>
+        <div class="intro-copy">
+          <p>Environmental change can feel too large to understand. Gaia Eco Agent gives people a clearer way to move from what the planet is showing us to what we can do next.</p>
+          <p>It is a decision-support concept: AI can help connect information and explain possibilities. People bring the care, context and choices that make action real.</p>
+        </div>
+      </div>
+      <div class="principle-line"><span class="principle-mark" aria-hidden="true">✳</span><span>AI helps us see the signal.<br><b>People decide what happens next.</b></span><span class="principle-side">A TOOL FOR UNDERSTANDING<br>NOT A SUBSTITUTE FOR PEOPLE</span></div>
+    </section>
+
+    <section class="intelligence-section section-shell" id="intelligence" aria-labelledby="intelligence-title">
+      <div class="section-kicker"><span>02</span><span>THE INTELLIGENCE LOOP</span></div>
+      <div class="section-heading-row">
+        <div><h2 id="intelligence-title">From signal<br>to <em>next step.</em></h2></div>
+        <p class="section-intro">Gaia follows a simple path. Each stage adds understanding, so a signal becomes something people can respond to.</p>
+      </div>
+
+      <div class="loop-layout">
+        <div class="loop-list" role="list" aria-label="How Gaia Eco Agent works">
+          <article class="loop-item" role="listitem">
+            <span class="loop-number">01</span><span class="loop-node" aria-hidden="true"></span>
+            <div><h3>The planet signals</h3><p>Weather, land, water and living systems leave clues about changing conditions.</p></div>
+            <span class="loop-type">OBSERVE</span>
+          </article>
+          <article class="loop-item" role="listitem">
+            <span class="loop-number">02</span><span class="loop-node" aria-hidden="true"></span>
+            <div><h3>AI looks for a pattern</h3><p>Gaia can help organize information and explain what a pattern may mean.</p></div>
+            <span class="loop-type">UNDERSTAND</span>
+          </article>
+          <article class="loop-item" role="listitem">
+            <span class="loop-number">03</span><span class="loop-node" aria-hidden="true"></span>
+            <div><h3>People choose a response</h3><p>Possible next steps become clearer. People weigh local knowledge and decide.</p></div>
+            <span class="loop-type">TAKE ACTION</span>
+          </article>
+        </div>
+
+        <div class="scenario-panel">
+          <div class="scenario-head"><div><span class="micro-label">A WALK THROUGH THE SYSTEM</span><h3>When a forest<br>starts to dry.</h3></div><span class="demo-stamp">SIMULATED<br>SCENARIO</span></div>
+          <div class="scenario-flow" aria-label="Illustrative signal pathway">
+            <div class="scenario-row"><span class="scenario-index">SIGNAL</span><span class="scenario-dot"></span><p>Less rain, warmer days</p><span class="scenario-kind">OBSERVED INPUTS</span></div>
+            <div class="scenario-connector"><span></span><span></span><span></span></div>
+            <div class="scenario-row"><span class="scenario-index">INSIGHT</span><span class="scenario-dot dot-cyan"></span><p>Vegetation may be under stress</p><span class="scenario-kind">POSSIBLE INTERPRETATION</span></div>
+            <div class="scenario-connector"><span></span><span></span><span></span></div>
+            <div class="scenario-row"><span class="scenario-index">ACTION</span><span class="scenario-dot dot-gold"></span><p>Check local water and habitat needs</p><span class="scenario-kind">HUMAN-LED RESPONSE</span></div>
+          </div>
+          <p class="scenario-footnote">Illustrative pathway only. No forest is being monitored here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="data-section" id="live-data" aria-labelledby="data-title">
+      <div class="section-shell data-shell">
+        <div class="section-kicker"><span>03</span><span>LIVE CONDITIONS, WITH CONTEXT</span></div>
+        <div class="section-heading-row data-heading-row">
+          <div><h2 id="data-title">One moment is a clue.<br><em>Not the whole story.</em></h2></div>
+          <p class="section-intro">A current weather model snapshot can help describe conditions around you. It cannot tell us, by itself, what the climate is doing.</p>
+        </div>
+
+        <div class="weather-layout">
+          <article class="weather-card" aria-labelledby="weather-title">
+            <div class="weather-card-top"><div><span class="micro-label">LOCATION-BASED SNAPSHOT</span><h3 id="weather-title">Weather model, where you are</h3></div><span class="source-pill"><span></span> OPEN-METEO</span></div>
+            <div class="weather-reading" aria-live="polite" aria-atomic="true">
+              <div class="weather-symbol" aria-hidden="true"><svg viewBox="0 0 56 56"><circle cx="22" cy="19" r="8"/><path d="M22 3v4m0 24v4M6 19h4m24 0h4M11 8l3 3m17 17 3 3m0-23-3 3M14 27l-3 3"/><path d="M18 43h24a7 7 0 0 0 0-14c-.7 0-1.5.1-2.2.3A12 12 0 0 0 17 34a5 5 0 0 0 1 9Z"/></svg></div>
+              <div class="weather-value-wrap"><p class="weather-value" id="weather-value">—</p><p class="weather-condition" id="weather-condition">No live location connected</p></div>
+              <div class="weather-location" id="weather-location">LOCATION PRIVATE</div>
+            </div>
+            <div class="weather-note" id="weather-note">Allow location access to see a current weather snapshot. Your coordinates are used for this request only.</div>
+            <div class="weather-card-bottom"><span id="weather-source">Waiting for location</span><span id="weather-updated">—</span></div>
+            <div class="weather-actions"><button class="button button-small button-primary" type="button" id="location-button">Use my location <span aria-hidden="true">↗</span></button><button class="refresh-button" type="button" id="weather-refresh" aria-label="Refresh weather data" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4.4 9A8 8 0 0 1 18 5.2L20 7M4 17v-5h5m10.6 3A8 8 0 0 1 6 18.8L4 17"/></svg><span>Refresh</span></button></div>
+            <p class="weather-state" id="weather-state" role="status" aria-live="polite"></p>
+          </article>
+
+          <div class="signal-context">
+            <div class="context-callout"><span class="context-glyph" aria-hidden="true">↗</span><div><span class="micro-label">WHAT THIS TELLS US</span><h3>One snapshot.<br>A careful conclusion.</h3><p>A current weather model describes short-term conditions. Climate patterns emerge from observations over long periods.</p></div></div>
+            <div class="context-divider"></div>
+            <div class="context-bottom"><span class="context-number">01 / 01</span><p><b>One local view.</b><br>No global claims. No invented trends.</p><a href="#gaia-ai" class="text-link">Ask Gaia about the difference <span aria-hidden="true">→</span></a></div>
+          </div>
+        </div>
+
+        <div class="pathway-widget" aria-labelledby="pathway-title">
+          <div class="pathway-intro"><span class="micro-label">EXPLORE AN EXAMPLE</span><h3 id="pathway-title">How a signal becomes<br><em>a useful question.</em></h3><p>Choose a theme to see an illustrative path. These examples are not live environmental alerts.</p></div>
+          <div class="pathway-content">
+            <div class="pathway-tabs" role="group" aria-label="Choose an illustrative environmental theme">
+              <button type="button" class="pathway-tab is-active" data-pathway="heat" aria-pressed="true">Heat</button>
+              <button type="button" class="pathway-tab" data-pathway="water" aria-pressed="false">Water</button>
+              <button type="button" class="pathway-tab" data-pathway="habitat" aria-pressed="false">Habitat</button>
+            </div>
+            <div class="pathway-map" aria-live="polite" aria-atomic="true">
+              <div class="path-node"><span class="path-label">SIGNAL</span><p id="path-signal">Several unusually hot days</p></div>
+              <span class="path-link" aria-hidden="true"><i></i></span>
+              <div class="path-node"><span class="path-label">GAIA ASKS</span><p id="path-insight">Which places have the least shade?</p></div>
+              <span class="path-link" aria-hidden="true"><i></i></span>
+              <div class="path-node path-node-action"><span class="path-label">HUMAN ACTION</span><p id="path-action">Prioritize shade and cool spaces</p></div>
+            </div>
+            <div class="pathway-caption"><span class="demo-dot"></span> ILLUSTRATIVE PATH · NOT A MEASURED EVENT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-section section-shell" id="shop" aria-labelledby="shop-title">
+      <div class="section-kicker"><span>04</span><span>THE GAIA EVERYDAY STORE</span></div>
+      <div class="store-heading">
+        <div><h2 id="shop-title">Choose well.<br><em>Use it longer.</em></h2></div>
+        <p>Useful things for lower-waste routines. These sample listings are for the experience demo; review a seller's materials and certifications before buying.</p>
+      </div>
+      <div class="store-toolbar"><span><i></i> SAMPLE CATALOG · PRICES IN INR · DEMO CHECKOUT</span><button type="button" class="store-cart-link" data-open-cart>View your bag <span aria-hidden="true">↗</span></button></div>
+      <div class="product-grid">
+        <article class="product-card" data-product-card="field-bottle">
+          <div class="product-art product-art-bottle" aria-hidden="true">
+            <span class="product-art-index">01 / DAILY CARRY</span>
+            <svg viewBox="0 0 240 190"><defs><linearGradient id="bottleMetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9cb1a1"/><stop offset=".46" stop-color="#405d50"/><stop offset="1" stop-color="#1d3027"/></linearGradient></defs><ellipse cx="124" cy="165" rx="53" ry="9" fill="#0b120e" opacity=".45"/><path d="M107 31h32v15l10 12v89c0 9-7 15-16 15h-20c-9 0-16-6-16-15V58l10-12V31Z" fill="url(#bottleMetal)" stroke="#b0c4b1" stroke-opacity=".55"/><path d="M107 31h32v12h-32z" fill="#b1c1ad"/><path d="M104 75c13 6 27 7 44 0" fill="none" stroke="#c4dac2" stroke-opacity=".35"/><path d="M117 61v63" stroke="#ecf2e3" stroke-opacity=".18"/><circle cx="173" cy="61" r="19" fill="none" stroke="#a4c295" stroke-opacity=".55"/><path d="M165 61h16m-8-8v16" stroke="#a4c295" stroke-opacity=".7"/></svg>
+            <span class="art-caption">REFILL / REPEAT</span>
+          </div>
+          <div class="product-copy"><div class="product-meta"><span>FIELD BOTTLE</span><span>₹899</span></div><h3>Steel Refill Bottle</h3><p>A reusable stainless steel bottle for everyday refills.</p><div class="product-details"><span>STAINLESS STEEL</span><span>750 ML</span></div><div class="product-actions"><button class="add-to-cart" type="button" data-add="field-bottle">Add to bag <span aria-hidden="true">＋</span></button><button class="ask-product" type="button" data-ask-product="field-bottle" aria-label="Ask Gaia AI about the Steel Refill Bottle">Ask Gaia <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-product-card="everyday-tote">
+          <div class="product-art product-art-tote" aria-hidden="true">
+            <span class="product-art-index">02 / REUSABLE ROUTINE</span>
+            <svg viewBox="0 0 240 190"><ellipse cx="122" cy="163" rx="61" ry="8" fill="#10110d" opacity=".35"/><path d="M75 71h94l-9 83c-1 6-5 9-11 9H95c-6 0-10-3-11-9l-9-83Z" fill="#a19170" stroke="#d7c6a2" stroke-opacity=".66"/><path d="m94 75 5-26c2-11 10-18 22-18s20 7 22 18l5 26" fill="none" stroke="#d7c6a2" stroke-width="7" stroke-linecap="round"/><path d="M99 51c1-10 8-16 22-16s21 6 22 16" fill="none" stroke="#5b6547" stroke-width="2"/><path d="M96 99c16 8 33 8 50 0" fill="none" stroke="#e3d3b1" stroke-opacity=".5"/><path d="M117 108c-9 7-11 17-6 24 7-2 11-7 12-15 4 8 10 13 18 14 2-9-4-18-16-24" fill="none" stroke="#667558" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="art-caption">CARRY WHAT YOU NEED</span>
+          </div>
+          <div class="product-copy"><div class="product-meta"><span>EVERYDAY TOTE</span><span>₹349</span></div><h3>Carry-All Cotton Tote</h3><p>A reusable cotton carry bag for errands and everyday essentials.</p><div class="product-details"><span>COTTON</span><span>REUSABLE</span></div><div class="product-actions"><button class="add-to-cart" type="button" data-add="everyday-tote">Add to bag <span aria-hidden="true">＋</span></button><button class="ask-product" type="button" data-ask-product="everyday-tote" aria-label="Ask Gaia AI about the Carry-All Cotton Tote">Ask Gaia <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-product-card="paper-journal">
+          <div class="product-art product-art-journal" aria-hidden="true">
+            <span class="product-art-index">03 / MAKE A NOTE</span>
+            <svg viewBox="0 0 240 190"><ellipse cx="122" cy="160" rx="62" ry="9" fill="#141912" opacity=".4"/><path d="m78 48 88-8 12 102-88 9-12-103Z" fill="#e1d9c5" stroke="#f0e9d6" stroke-opacity=".8"/><path d="m71 43 88-8 12 102-88 9L71 43Z" fill="#71856b" stroke="#b4c7a0" stroke-width="1.2"/><path d="m91 65 56-5m-53 14 57-5m-54 14 48-4" stroke="#d8e1cb" stroke-opacity=".63" stroke-width="2" stroke-linecap="round"/><path d="m87 113 30-3 2 19-30 3z" fill="none" stroke="#c9d8b9" stroke-opacity=".75"/><path d="m158 37 11 101" stroke="#d7cfbc" stroke-width="2"/><path d="M83 148h89" stroke="#f1e9d5" stroke-opacity=".4"/></svg>
+            <span class="art-caption">THOUGHTS, NOT WASTE</span>
+          </div>
+          <div class="product-copy"><div class="product-meta"><span>FIELD NOTES</span><span>₹279</span></div><h3>Recycled Paper Journal</h3><p>A simple notebook made with recycled paper for plans, lists and ideas.</p><div class="product-details"><span>RECYCLED PAPER</span><span>96 PAGES</span></div><div class="product-actions"><button class="add-to-cart" type="button" data-add="paper-journal">Add to bag <span aria-hidden="true">＋</span></button><button class="ask-product" type="button" data-ask-product="paper-journal" aria-label="Ask Gaia AI about the Recycled Paper Journal">Ask Gaia <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-product-card="dish-brush">
+          <div class="product-art product-art-brush" aria-hidden="true">
+            <span class="product-art-index">04 / KEEP THE HANDLE</span>
+            <svg viewBox="0 0 240 190"><ellipse cx="121" cy="163" rx="61" ry="8" fill="#11150f" opacity=".4"/><g transform="rotate(-31 122 95)"><rect x="110" y="41" width="25" height="101" rx="12" fill="#9b7955" stroke="#d0ae81" stroke-opacity=".62"/><path d="M115 49c8 9 10 19 9 28m-8 6c7 9 9 18 8 27" fill="none" stroke="#ddbd92" stroke-opacity=".42" stroke-width="2"/><rect x="99" y="28" width="47" height="31" rx="13" fill="#e0d3b9" stroke="#f0e7d4" stroke-opacity=".65"/><path d="M103 40h39m-38 7h37" stroke="#71846b" stroke-width="2" stroke-linecap="round"/><path d="M99 33v5m0 6v5m47-16v5m0 6v5" stroke="#71846b" stroke-width="1.4"/></g><circle cx="176" cy="61" r="19" fill="none" stroke="#a8c89a" stroke-opacity=".55"/><path d="M168 61h16" stroke="#a8c89a" stroke-opacity=".72"/></svg>
+            <span class="art-caption">REPLACE THE HEAD</span>
+          </div>
+          <div class="product-copy"><div class="product-meta"><span>HOME / CLEAN</span><span>₹449</span></div><h3>Replaceable-Head Brush</h3><p>A wood-handled dish brush with a head designed to be replaced.</p><div class="product-details"><span>WOOD HANDLE</span><span>REPLACEABLE HEAD</span></div><div class="product-actions"><button class="add-to-cart" type="button" data-add="dish-brush">Add to bag <span aria-hidden="true">＋</span></button><button class="ask-product" type="button" data-ask-product="dish-brush" aria-label="Ask Gaia AI about the Replaceable-Head Dish Brush">Ask Gaia <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+      </div>
+      <p class="store-disclaimer"><span aria-hidden="true">✳</span> DEMO STORE · SAMPLE PRODUCT DETAILS AND PRICES · NO REAL PAYMENT OR FULFILLMENT</p>
+      <p class="cart-live-status sr-only" id="cart-live-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="gaia-section section-shell" id="gaia-ai" aria-labelledby="gaia-title">
+      <div class="section-kicker"><span>05</span><span>MEET THE INTELLIGENCE LAYER</span></div>
+      <div class="gaia-heading">
+        <div class="gaia-orb-wrap" aria-hidden="true">
+          <div class="gaia-orbit orbit-one"></div><div class="gaia-orbit orbit-two"></div>
+          <div class="gaia-orb"><span class="orb-core"></span><span class="orb-meridian"></span></div>
+          <span class="orb-spark spark-one"></span><span class="orb-spark spark-two"></span>
+        </div>
+        <div class="gaia-heading-copy"><p class="eyebrow">A CALM VOICE FOR A COMPLEX PLANET</p><h2 id="gaia-title">Ask better questions.<br><em>Find a way forward.</em></h2></div>
+        <p class="gaia-intro-copy">Gaia AI helps make environmental ideas easier to understand. Ask about a threat, explore a possibility or find a practical action to try.</p>
+      </div>
+
+      <div class="chat-layout">
+        <aside class="chat-aside">
+          <span class="micro-label">START WITH A THEME</span>
+          <div class="quick-actions" role="group" aria-label="Suggested Gaia topics">
+            <button class="quick-action" type="button" data-prompt="How can AI help people understand climate change?"><span class="quick-icon">01</span><span>Explore climate</span><span aria-hidden="true">↗</span></button>
+            <button class="quick-action" type="button" data-prompt="Why does biodiversity matter, and what can communities do to protect it?"><span class="quick-icon">02</span><span>Protect biodiversity</span><span aria-hidden="true">↗</span></button>
+            <button class="quick-action" type="button" data-prompt="How can cleaner energy help reduce pollution?"><span class="quick-icon">03</span><span>Clean energy</span><span aria-hidden="true">↗</span></button>
+            <button class="quick-action" type="button" data-prompt="What is one realistic action I can take for the environment today?"><span class="quick-icon">04</span><span>Take one action</span><span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="chat-trust-note"><span class="trust-mark" aria-hidden="true">✳</span><p>Gaia explains possibilities, not certainties. For current conditions, use the live data panel.</p></div>
+        </aside>
+
+        <section class="chat-panel" aria-label="Chat with Gaia AI">
+          <div class="chat-header"><div class="chat-agent"><span class="mini-orb" aria-hidden="true"><i></i></span><div><b>GAIA AI</b><span><i class="status-dot"></i> READY TO LISTEN</span></div></div><button class="clear-chat" type="button" id="clear-chat" aria-label="Start a new conversation">New conversation <span aria-hidden="true">↺</span></button></div>
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Conversation with Gaia AI">
+            <div class="welcome-state" id="welcome-state">
+              <span class="welcome-emblem" aria-hidden="true"><i></i></span>
+              <p class="micro-label">GAIA AI / ENVIRONMENTAL GUIDE</p>
+              <h3>Ask me about<br>our <em>living planet.</em></h3>
+              <p class="welcome-copy">I can help explain what is changing, why it matters, and where people can begin.</p>
+              <div class="welcome-prompts">
+                <button type="button" data-prompt="What is threatening coral reefs?">What is threatening coral reefs? <span aria-hidden="true">↗</span></button>
+                <button type="button" data-prompt="How can AI help reduce pollution?">How can AI help reduce pollution? <span aria-hidden="true">↗</span></button>
+                <button type="button" data-prompt="Give me one action I can take today.">One action I can take today <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="chat-compose-wrap">
+            <form class="chat-form" id="chat-form">
+              <label class="sr-only" for="chat-input">Ask Gaia AI about the planet</label>
+              <textarea id="chat-input" name="message" rows="1" maxlength="1000" placeholder="Ask Gaia about our planet…" required></textarea>
+              <button class="send-button" type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-4.5 14-2.4-5.1L5 12Z"/><path d="m12.1 13.9 6.9-8.9"/></svg></button>
+            </form>
+            <div class="composer-meta"><span>ENTER TO SEND <i>·</i> SHIFT + ENTER FOR A NEW LINE</span><span class="session-note">A PRIVATE, IN-BROWSER SESSION</span></div>
+          </div>
+          <p class="chat-status sr-only" id="chat-status" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </section>
+
+    <section class="impact-section" id="impact" aria-labelledby="impact-title">
+      <div class="section-shell impact-shell">
+      <div class="section-kicker"><span>06</span><span>INSIGHT BECOMES IMPACT</span></div>
+        <div class="impact-head"><h2 id="impact-title">Big change has<br><em>somewhere to start.</em></h2><p>One informed choice can become a shared habit. Pick a first step that fits your life and your community.</p></div>
+        <div class="action-grid">
+          <article class="action-card"><span class="action-index">01</span><div class="action-icon" aria-hidden="true">↘</div><h3>Use less energy</h3><p>Switch off what you are not using. Ask where your electricity comes from.</p><span class="action-category">SAVE ENERGY</span></article>
+          <article class="action-card"><span class="action-index">02</span><div class="action-icon" aria-hidden="true">↻</div><h3>Choose to reuse</h3><p>Repair, refill or share one everyday item before replacing it.</p><span class="action-category">REDUCE WASTE</span></article>
+          <article class="action-card"><span class="action-index">03</span><div class="action-icon" aria-hidden="true">⌁</div><h3>Make room for nature</h3><p>Learn what local species need, then support a habitat effort nearby.</p><span class="action-category">PROTECT NATURE</span></article>
+          <article class="action-card"><span class="action-index">04</span><div class="action-icon" aria-hidden="true">⇢</div><h3>Move with care</h3><p>For your next short trip, consider walking, cycling or sharing a ride.</p><span class="action-category">TRAVEL SMART</span></article>
+        </div>
+        <div class="action-bridge"><span class="bridge-line"></span><span>SMALL CHOICES · SHARED BY MANY · BUILT TO LAST</span><span class="bridge-line"></span></div>
+      </div>
+    </section>
+
+    <section class="faq-section section-shell" id="faq" aria-labelledby="faq-title">
+      <div class="section-kicker"><span>07</span><span>GOOD QUESTIONS</span></div>
+      <div class="faq-layout"><div><h2 id="faq-title">Clear answers<br><em>build trust.</em></h2><p class="faq-intro">How Gaia works, what the data means and where people stay in control.</p></div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>Are these real products, and will my order ship? <span aria-hidden="true">+</span></summary><p>The store is a demo catalog with sample products and prices. UPI and cash-on-delivery buttons confirm a local demonstration only; no seller receives an order and nothing is shipped.</p></details>
+          <details class="faq-item"><summary>Does the UPI option collect money? <span aria-hidden="true">+</span></summary><p>No. The UPI demo confirms the sample order immediately without opening a payment app or contacting a bank.</p></details>
+          <details class="faq-item"><summary>How does Gaia AI help? <span aria-hidden="true">+</span></summary><p>Gaia can explain environmental topics, connect signals to possible risks and suggest places to start. People bring local knowledge and make the decisions.</p></details>
+          <details class="faq-item"><summary>Is Gaia using live environmental data? <span aria-hidden="true">+</span></summary><p>The weather panel can request a current forecast for your location through Open-Meteo, only after you choose to share your location. Other scenarios on this page are clearly labeled as illustrative.</p></details>
+          <details class="faq-item"><summary>Can one weather reading explain climate change? <span aria-hidden="true">+</span></summary><p>No. Weather describes short-term conditions. Climate is understood through long-term patterns across many observations.</p></details>
+          <details class="faq-item"><summary>What happens when live data is unavailable? <span aria-hidden="true">+</span></summary><p>The weather panel explains that the reading could not be reached and shows an example scenario labeled as demo data. Gaia AI also has a local environmental guide for common questions.</p></details>
+          <details class="faq-item"><summary>Can students use Gaia? <span aria-hidden="true">+</span></summary><p>Yes. Gaia is designed to make environmental ideas easier for students, teachers and curious visitors to explore together.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="take-action-section" id="take-action" aria-labelledby="take-action-title">
+      <div class="section-shell take-action-shell">
+        <div class="final-signal" aria-hidden="true"><span class="final-orbit"></span><span class="final-core">✳</span></div>
+        <div class="final-copy"><p class="eyebrow">THE PLANET CALLS. WE ANSWER TOGETHER.</p><h2 id="take-action-title">What will you<br><em>try next?</em></h2><p>Choose one small action. Make it yours, then invite someone to join you.</p></div>
+        <form class="mission-form" id="mission-form" novalidate>
+          <label for="mission-choice">My next step</label>
+          <div class="select-wrap"><select id="mission-choice" name="action" required aria-describedby="mission-feedback"><option value="">Choose an action to begin</option><option value="save energy">Use less energy this week</option><option value="reuse">Repair or reuse one item</option><option value="nature">Learn about local nature</option><option value="travel">Choose a lower-impact trip</option><option value="share">Share one idea with someone</option></select><span aria-hidden="true">⌄</span></div>
+          <button class="button button-primary mission-submit" type="submit">Set my intention <span aria-hidden="true">↗</span></button>
+          <p class="mission-feedback" id="mission-feedback" role="status" aria-live="polite">Your choice stays in this page; nothing is sent or stored.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top">
+      <a class="brand footer-brand" href="#top" aria-label="Gaia Eco Agent home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14"/><path d="M8 20.5c4.5-9 13.2-12.1 19.6-10.7-1 8.7-6.5 15.3-13.1 15.3-2.7 0-5-1.8-6.5-4.6Z"/><path d="M10 25c3.4-4.6 7.9-8.5 14.2-11.1"/></svg></span><span class="brand-name">GAIA<span> / ECO AGENT</span></span></a>
+      <p class="footer-manifesto">The future is a shared responsibility.<br><b>Let's meet it with better questions.</b></p>
+      <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="section-shell footer-bottom">
+      <span>AN AI-POWERED ECO AGENT CONCEPT</span>
+      <span>DEMO DATA IS LABELED · LIVE WEATHER IS OPT-IN</span>
+      <details class="access-panel" id="display-settings">
+        <summary>Colour &amp; display settings <span aria-hidden="true">＋</span></summary>
+        <div class="access-controls">
+          <div class="settings-group"><span class="access-label">ACCENT COLOUR</span><div class="accent-options" role="group" aria-label="Choose an accent colour">
+            <button type="button" class="accent-choice" data-accent-choice="forest" aria-pressed="true"><i class="accent-swatch swatch-forest"></i>Forest</button>
+            <button type="button" class="accent-choice" data-accent-choice="ocean" aria-pressed="false"><i class="accent-swatch swatch-ocean"></i>Ocean</button>
+            <button type="button" class="accent-choice" data-accent-choice="sunlight" aria-pressed="false"><i class="accent-swatch swatch-sunlight"></i>Sunlight</button>
+          </div></div>
+          <div class="settings-group"><span class="access-label">TEXT SIZE</span><div class="settings-row"><button type="button" id="font-smaller" aria-label="Decrease text size">A−</button><button type="button" id="font-larger" aria-label="Increase text size">A+</button><span class="setting-note">Adjust from 92% to 115%</span></div></div>
+          <div class="settings-group"><span class="access-label">CONTRAST</span><div class="settings-row"><button type="button" id="contrast-toggle" aria-pressed="false">High contrast</button></div></div>
+          <div class="settings-group"><span class="access-label">MOTION</span><div class="settings-row"><button type="button" id="motion-toggle" aria-pressed="false">Reduce motion</button><span class="motion-pref" id="motion-preference">Follows system setting</span></div></div>
+        </div>
+      </details>
+    </div>
+    <div class="sr-only" id="site-announcer" aria-live="polite"></div>
+  </footer>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog-shell">
+      <div class="cart-dialog-head"><div><span class="micro-label">GAIA EVERYDAY STORE</span><h2 id="cart-title">Your bag <span id="cart-title-count">(0)</span></h2></div><button type="button" class="cart-close" id="cart-close" aria-label="Close shopping cart">×</button></div>
+      <div class="cart-dialog-body" id="cart-state"></div>
+      <p class="cart-demo-note"><span aria-hidden="true">✳</span> DEMO CHECKOUT · No payment is collected and no items are shipped.</p>
+    </div>
+  </dialog>
+  <div class="cursor-orbit" aria-hidden="true"></div>
+</body>
+</html>
